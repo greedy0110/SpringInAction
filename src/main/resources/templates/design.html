@@ -10,6 +10,7 @@
 		<h1>Design your taco!</h1>
 		<img th:src="@{/images/TacoCloud.png}" />
 
+		<!-- WHAT: action 을 지정 안하면, get 요청 경로로 post 를 보낸다. -->
 		<form method="POST" th:object="${taco}">
 			<span
 				class="validationError"
